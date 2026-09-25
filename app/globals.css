@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-dark: #0b132b;
+    --navy-card: #1c2541;
+    --blue-primary: #1d4ed8;
+    --blue-sky: #0284c7;
+    --gold-accent: #f59e0b;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* PID Mode: Enhances touch targets and readability for 65-86" smart touch screens */
+  html.pid-mode {
+    font-size: 18px;
+  }
+
+  html.pid-mode button,
+  html.pid-mode a.touch-btn {
+    min-height: 52px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-weight: 700;
+  }
+
+  html.pid-mode input,
+  html.pid-mode select,
+  html.pid-mode textarea {
+    min-height: 52px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Certificate print layout */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .cert-container {
+    box-shadow: none !important;
+    border: 4px solid #1d4ed8 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 24px !important;
+    page-break-inside: avoid;
+  }
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "PID Learning Lab - LMS Workshop Papan Interaktif Digital SD",
+  "description": "LMS Workshop Pemanfaatan Papan Interaktif Digital (PID) sebagai Media Pembelajaran SD. Kenali • Eksplorasi • Rancang • Buat • Uji.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
